@@ -1,1 +1,64 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+body {
+background-color: #f0f0f2;
+margin: 0;
+padding: 0;
+font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main {
+width: 700px;
+margin: 5em auto;
+padding: 2em;
+background-color: #fdfdff;
+border-radius: 0.5em;
+box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+}
+a:link, a:visited {
+text-decoration: none;
+display: inline-block;
+border: none; /* Remove borders */
+color: white; /* Add a text color */
+padding: 14px 28px; /* Add some padding */
+cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+img, canvas {
+width: 100%;
+height: auto;
+border: 2px solid #ccc;
+border-radius: 0.5em;
+}
+label, input {
+font-size: 16px;
+border: none; /* Remove borders */
+color: white; /* Add a text color */
+padding: 14px 28px; /* Add some padding */
+cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.btn {
+font-size: 16px;
+border: none; /* Remove borders */
+color: white; /* Add a text color */
+padding: 14px 28px; /* Add some padding */
+cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #04AA6D;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */
+.default:hover {background: #ddd;}
+@media (max-width: 600px) {
+main {
+margin: 0 auto;
+width: auto;
+}
+}
